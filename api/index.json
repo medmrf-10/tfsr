@@ -1,4 +1,16 @@
 {
+ "_api": {
+  "contract": "ayah/<s>/<a> for all editions at once; ed/<slug>/s<NNN> for one edition's whole surah.",
+  "base": "https://medmrf-10.github.io/tfsr/api/",
+  "fields": {
+   "g": "group ayah key (range covered by this tafsir block)",
+   "f": "from ayah",
+   "t": "to ayah",
+   "p": "plain text — use this",
+   "x": "raw HTML of the edition"
+  },
+  "hints": "Not every edition covers every ayah — absent slug = not covered."
+ },
  "editions": [
   {
    "id": 22,
@@ -209,6 +221,7 @@
  "total_ayahs": 6236,
  "endpoints": {
   "ayah_all": "/api/ayah/<surah>/<ayah>.json.gz",
-  "edition": "/api/editions/<slug>.json.gz"
+  "edition_surah": "/api/ed/<slug>/s<NNN>.json.gz",
+  "edition_meta": "/api/editions/<slug>.json.gz"
  }
 }
