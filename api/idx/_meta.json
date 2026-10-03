@@ -1,0 +1,9 @@
+{
+ "contract": "word->[[surah,ayah]] postings over the quran text (n field, normalized)",
+ "norm": "strip harakat/tatweel; أإآٱ->ا; ى->ي; ة->ه; NO prefix stripping — expand queries client-side",
+ "shard": "first 2 normalized chars",
+ "shards": 568,
+ "n_words": 14633,
+ "gz_bytes": 292805,
+ "url_note": "Arabic shard filenames MUST be percent-encoded or Pages returns 400"
+}
